@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "NIVREN-DRILL-0001",
+    "package": "registry_drill",
+    "affected_versions": [
+      "1.0.0"
+    ],
+    "severity": "high",
+    "summary": "Yank drill: this release is withdrawn as part of the registry operations exercise",
+    "withdrawn": false,
+    "signature": "50003d84a782044d41217a83fc8f70d95e80677b6120a146e107e82f1bb2de28a8d5788414098a2f56c15c7240e6f38bb7557c6b6515980d1332e705311a9e00"
+  }
+]

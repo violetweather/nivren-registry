@@ -1,8 +1,8 @@
 {
-  "generation": 2,
-  "issued_at": 1788215818,
-  "expires_at": 1795991818,
+  "generation": 3,
+  "issued_at": 1788215970,
+  "expires_at": 1795991970,
   "revoked_keys": [],
   "frozen_packages": {},
-  "signature": "2029bec09cf6b6da1c0408261de79a02a8cc94f72ac7720f469e5a2da65ef532e9d41a107eabbe4b4b6d47db00aa6b4abe8c628331ff8b374e814ef47f4f2706"
+  "signature": "25d5c1e5b4ff55ea60daad1eb70b4ef0b9862f8d7e2fd5f93d968e134d85955cc8cdd6d23891f2a22b33c82c0b0b29dad0c031f9fc5fa8bca38589818a5ef601"
 }
