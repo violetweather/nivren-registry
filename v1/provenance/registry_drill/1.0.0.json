@@ -1,0 +1,12 @@
+{
+  "package": "registry_drill",
+  "version": "1.0.0",
+  "sha256": "e4c094d23c2d1b6a2cfc27954362835457f3a5826cb0d9bbc90caf5e1c087eb2",
+  "publisher": "outsider",
+  "public_key": "e559bcdb1ca617021e94d6b2a35ebe302e0a392371a6b898c3e21f0b237f3ec2",
+  "repository": "outsider/registry-drill",
+  "workflow": ".github/workflows/publish.yml",
+  "commit": "abcdef1234567",
+  "issued_at": 1788215818,
+  "signature": "7fde916914cf1abb5accc16116319443205d96b4eb00c7f204f1b0639d173dded6729c681435c2a0c32b447d301ebd39635c8fe7e749c8c25695d86d10a30d09"
+}
