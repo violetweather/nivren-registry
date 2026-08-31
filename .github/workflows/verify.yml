@@ -1,0 +1,29 @@
+name: Verify the registry
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch the Nivren CLI
+        run: |
+          curl -sSfL -o nivren.zip https://github.com/violetweather/nivren/releases/download/v0.10.0-beta.9/nivren-v0.10.0-beta.9-linux-x64.zip
+          unzip -o nivren.zip -d nivren-cli
+          NIV=$(find nivren-cli -name niv -type f | head -1)
+          chmod +x "$NIV"
+          echo "NIV=$NIV" >> "$GITHUB_ENV"
+      - name: Verify every signed release
+        run: python3 tools/verify_registry.py --niv "$NIV"
+      - name: Install from the live registry
+        if: github.event_name == 'push'
+        run: |
+          mkdir -p live-install
+          printf '[package]\nname = "registry_ci"\nversion = "1.0.0"\nentry = "main.niv"\n\n[dependencies]\nnivren_stats = "1.0.0"\n' > live-install/niv.toml
+          printf 'use "@nivren_stats"\n\nshow(nivren_stats.mean with { values set [2.0, 4.0, 6.0] })\n' > live-install/main.niv
+          "$NIV" install --trusted https://violetweather.github.io/nivren-registry v1/trust/root.pub live-install
+          "$NIV" run live-install
