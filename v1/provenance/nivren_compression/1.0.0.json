@@ -1,0 +1,12 @@
+{
+  "package": "nivren_compression",
+  "version": "1.0.0",
+  "sha256": "cc89b13c616db7a97a807aad2b15782cc5dc0e681c9de20491c85f0848302533",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215621,
+  "signature": "c431fe3c3e04a946c329fbbfb816717bc7e2bbd50394cb8633506ca5569f651b4c48e435dbc1361c9ed0930ea86c72450cc59a3946bde4bbedc8f0bf64242900"
+}

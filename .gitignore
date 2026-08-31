@@ -1,0 +1,3 @@
+target/
+*.secret
+tools/status-unsigned.json

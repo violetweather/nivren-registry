@@ -1,0 +1,12 @@
+{
+  "package": "nivren_discord",
+  "version": "1.0.0",
+  "sha256": "92e31bd1be2b6a491981a5c88409b0a471715178f8572fc6510b1b6ff8d562a9",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215622,
+  "signature": "b93be9604d77883b89948f5c095e2b0ca8826cb59607f11fd18e08eb9f6723a5d213e35387396fa5f1a5658e079510ebbeb0df070c0de1bea06f5bf750183d06"
+}

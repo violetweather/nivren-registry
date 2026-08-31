@@ -1,0 +1,12 @@
+{
+  "package": "nivren_jwt",
+  "version": "1.0.0",
+  "sha256": "fcf3e4f692451703a4aa4ecee024a5f16a7abf10a631449b38fccbeedfefa1da",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215623,
+  "signature": "1efafce94d9953316c813609c314e9099c16114ee0dda9f10a98e1e2710632ffb8f8bab82fa73281bdbeca626b275252e91f4013807c02422d45ca022d8c2e08"
+}

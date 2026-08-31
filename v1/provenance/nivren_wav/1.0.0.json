@@ -1,0 +1,12 @@
+{
+  "package": "nivren_wav",
+  "version": "1.0.0",
+  "sha256": "4060879de41e333200d0b72960b144bc63d34350d7392ff2ed82048cdd47b037",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215625,
+  "signature": "b6f8dc13cdafe2e4685bac6697a9e857eddd94b85d0c846c187e250ee30051445e8b7a5f76cb38e6f96b8facbc6cd1f233d7cbf45097e9d8becb4f24f4ff7709"
+}

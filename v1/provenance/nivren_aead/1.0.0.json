@@ -1,0 +1,12 @@
+{
+  "package": "nivren_aead",
+  "version": "1.0.0",
+  "sha256": "84ed46d37438a2aa08f09262d49de8443170473c8921470e742da25ba4dcef32",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215621,
+  "signature": "6b3cbb64583ab9a4605fe348648909ca7599c6f957c4d6d348f14d56c066bf9edf2727841fa6e26fabb01f2ee30b131770b5cab04596bb5d95701bd218874d0b"
+}

@@ -1,0 +1,12 @@
+{
+  "package": "nivren_desktop",
+  "version": "1.0.0",
+  "sha256": "c8f3d1c82cda54d6fd26660beff62799f4306f44cc64c1ccb52a24db5ef7e8a2",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215622,
+  "signature": "748fccce4a4f7bfde5cce85b32a16264d8929195b85c727868f45da773c4aa17d52150628b5075c48548b36bd7afd73229f88cdf31993ede765b3618bfc0140c"
+}

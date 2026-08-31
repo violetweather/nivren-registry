@@ -1,0 +1,12 @@
+{
+  "package": "nivren_matrix",
+  "version": "1.0.0",
+  "sha256": "b5868a6dbe39999c7ae31f87293dafb5931a09c6ac9b66378f57c2255e511e2e",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215623,
+  "signature": "65e4244bbb439b89a06fe68e3df8e759ba6c1c74a2419637e936667f1618369cf99572169aca09560661e262da696cb896e5d05546a9aa63ca721991a9ef6209"
+}

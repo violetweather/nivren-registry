@@ -1,0 +1,12 @@
+{
+  "package": "nivren_routing",
+  "version": "1.0.0",
+  "sha256": "ee1c8ace3c9727144ac93cb94a2cf4cd2cbe1799573df907dc58aa1cbaff029d",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215623,
+  "signature": "d4dcbd0a92dc557d168e0a76cb133c8e0d8e5abb78197dfc9f989b73f9522995ad924dffd7e68bc0e549eb610b6680008e9720e60425e349a4510e8cb2747305"
+}

@@ -1,0 +1,12 @@
+{
+  "package": "nivren_csv",
+  "version": "1.0.0",
+  "sha256": "cafc59b96c9f2328200ab50a5ad1c6b9ece10ac6aa29030cfa8250383e0d0fb5",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215622,
+  "signature": "96cde26b57eeb733a1566fa26a1166c252de81d225d7a36e46765ae8f4ce25d9e752f1b1903c1f2a9dd07d97fc9dc367315a52f069399b80e7fdc9e776d42603"
+}

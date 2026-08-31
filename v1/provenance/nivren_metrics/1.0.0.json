@@ -1,0 +1,12 @@
+{
+  "package": "nivren_metrics",
+  "version": "1.0.0",
+  "sha256": "06819af79e402a3494b126deffcf2d65af8ee74dc991b766bd5846f762acd74b",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215623,
+  "signature": "678aa0bbc040f8da11794e4fb1e494cc271509d813fa1cc33cb831457e5e0d3880cb39e67a3d243f464ac7f229870c74f58e112a5c26a30ef59ab480c44b5a0d"
+}

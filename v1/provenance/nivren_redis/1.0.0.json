@@ -1,0 +1,12 @@
+{
+  "package": "nivren_redis",
+  "version": "1.0.0",
+  "sha256": "50e5b0de9258fa0fb95be36bd5e3d56bb7725cb3fca23d2100d3113bb62aec2f",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215623,
+  "signature": "f173cdec7b7fdbb2f972360323fde76f7edd8a5573d5c03091f45b1324635c6c7bfb236cbb34a7916f884d566b8af21845a1c9c23050b2e7d90487d3ae50e701"
+}

@@ -1,0 +1,8 @@
+{
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "expires_at": 1851287621,
+  "signature": "1e59f1880c4b0162d9768877f6c2ca1adbe1f2276ea8237cd926bc9e9a8db42cdff7137fbdb2480c2ef42a227cd12d5d33dffb7c1eeb3937e564b780127a360d"
+}

@@ -1,0 +1,12 @@
+{
+  "package": "nivren_oidc",
+  "version": "1.0.0",
+  "sha256": "fae948c7094fb5ecb9902e9482e09b8645108684514071d8954133eb88d988b6",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215623,
+  "signature": "de7a1399ce7666edd9f052fd01c69be332bce709ec9f766e4727209fd5b15b1406fdb2279c536c7ecc7d150de5d6ba335f0c008d2f1846b78a7cb97e076fb50b"
+}

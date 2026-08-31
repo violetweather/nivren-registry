@@ -1,0 +1,12 @@
+{
+  "package": "nivren_sql",
+  "version": "1.0.0",
+  "sha256": "724a1b8b9d580316c38aa009ad70c746e820160a27329fc216a72b01cab2e82a",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215624,
+  "signature": "df2ef978501032df375e22b375428052c84aa647b0437edb2098334a6d4d2cdd925bc38fce27c4a80be2decd55e2750ba75b0ccd0a2a997a9aa52cd9e1bf360f"
+}

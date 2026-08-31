@@ -1,0 +1,12 @@
+{
+  "package": "nivren_crypto",
+  "version": "1.0.0",
+  "sha256": "283c4769e7d0c1b9740a0bc3ccc4433ec71b0b29dcf44cf7ae5b0372d7572913",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215621,
+  "signature": "a3c11f7e9da456f7334ea7857c79a6c3acf11308f488fbfb5badbfd108ff3ccdb54cec3dd86cee1bd4e141cc32f06cc2ecad39458e3cc06a1784fe865427db09"
+}

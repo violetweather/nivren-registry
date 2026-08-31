@@ -1,0 +1,12 @@
+{
+  "package": "nivren_gpu",
+  "version": "1.0.0",
+  "sha256": "83ef04fce35c6f1a26ce516a4d863e4f6bac812811d7772403c187d74da0e384",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215622,
+  "signature": "89de1e88a86d507aedd881c12af2e7a06b78e10bd97abcbe38504355221162745015409a6ff89d4f12fe0e603ba168c7d4680aefd8fc64a376b7491a59967704"
+}

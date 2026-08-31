@@ -1,0 +1,12 @@
+{
+  "package": "nivren_columnar",
+  "version": "1.0.0",
+  "sha256": "9d25cdd54307ae8d55bc336c46b82c3e065c81b44ead256092ae4472b33e882e",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215621,
+  "signature": "2863890e3d1baa0eebba74a1eb42023e4f6f9f21bd3210b076e0b4ddd37c9b75e3abf7ba2d37452a7d185bee4098099ea6225243a0a1236546406b2953d8f30a"
+}

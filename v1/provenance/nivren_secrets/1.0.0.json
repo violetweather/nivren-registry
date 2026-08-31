@@ -1,0 +1,12 @@
+{
+  "package": "nivren_secrets",
+  "version": "1.0.0",
+  "sha256": "1109166676e3cfc2b8986e0dcf0b0fca56630f009ed1c4981fc8f91fdb92fff2",
+  "publisher": "official",
+  "public_key": "a9730366116cad82016898a075409150f9b80babab5b566a6b85fb1b7c18d29f",
+  "repository": "violetweather/nivren",
+  "workflow": ".github/workflows/release.yml",
+  "commit": "b265913b1cf56338474ec9305772f03f424c2232",
+  "issued_at": 1788215624,
+  "signature": "aa6e03373c3e46da44b832636ed0c2a166449a391edf107b6526e38f170799c90410e88b8dc1ba930d847fc67afa26fe2f2393b0bc16857e701f6a4894ced908"
+}
