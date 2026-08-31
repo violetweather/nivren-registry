@@ -7,7 +7,7 @@
     ],
     "severity": "high",
     "summary": "Yank drill: this release is withdrawn as part of the registry operations exercise",
-    "withdrawn": false,
-    "signature": "50003d84a782044d41217a83fc8f70d95e80677b6120a146e107e82f1bb2de28a8d5788414098a2f56c15c7240e6f38bb7557c6b6515980d1332e705311a9e00"
+    "withdrawn": true,
+    "signature": "33857fc6bfe0451e911723ec1fc0b0c9782f0c4e32f162267e013e3313fb60d3972cbf269eef07d2db68e3cddc1402b0528e01cc535743cef6ba1e1d144b7100"
   }
 ]
