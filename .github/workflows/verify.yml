@@ -37,6 +37,19 @@ jobs:
           echo "NIV=$NIV" >> "$GITHUB_ENV"
       - name: Verify every signed release
         run: python3 tools/verify_registry.py --niv "$NIV"
+      - name: Wait for the live registry to serve this generation
+        if: github.event_name == 'push'
+        run: |
+          # Pages deploys and the CDN lag the push by a little; installing
+          # against the previous generation would fail for the wrong reason.
+          expected="$(python3 -c 'import json; print(json.load(open("v1/trust/status.json"))["generation"])')"
+          for attempt in $(seq 1 40); do
+            live="$(curl -sSfL "https://violetweather.github.io/nivren-registry/v1/trust/status.json?t=$attempt" | python3 -c 'import json,sys; print(json.load(sys.stdin)["generation"])' || echo 0)"
+            [ "$live" = "$expected" ] && { echo "live registry serves generation $live"; exit 0; }
+            sleep 15
+          done
+          echo "live registry still serves generation $live, expected $expected" >&2
+          exit 1
       - name: Install from the live registry
         if: github.event_name == 'push'
         run: |
