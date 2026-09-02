@@ -4,5 +4,8 @@
   "repository": "outsider/registry-drill",
   "workflow": ".github/workflows/publish.yml",
   "expires_at": 1851287818,
-  "signature": "1ba4222f521bb142d04423d03b9c4d7737d7ab0ec2559156d4806d66fdaf3e62a7219e8067a5744334cd78beafcb1fab6d6c65f96fdb8fca72580d2bd5b7a108"
+  "packages": [
+    "registry_drill"
+  ],
+  "signature": "f41d6d364d1a06c8fdebe431268f24890680608252949118dbc9b8e1f5e4b30041a16aada02b32bd08b830cb1863fc05f899298a887744275daebd53bc2e1509"
 }

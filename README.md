@@ -49,9 +49,15 @@ repository is the public audit log.
 
 The signed status expires after 90 days, so installs stay fresh: the
 registry owner re-signs and redeploys it with
-`python tools/build_registry.py` (or `niv trust sign-status` alone) before
-expiry. Yanks, key revocations, and advisories ship the same way — a signed
-document update and a commit, never a deleted artifact.
+`python tools/resign_trust.py --generation <n+1>` (or
+`niv trust sign-status status.json root.secret out.json advisories.json`
+alone) before expiry. Yanks, key revocations, and advisories ship the same
+way — a signed document update and a commit, never a deleted artifact.
+
+Each publisher may release only the package names listed for it in
+`tools/publishers.json`; the root-signed authorization carries that list
+and every client enforces it. Clients need Nivren 1.0.1 or later to read
+the current trust documents.
 
 Publishing is a pull request carrying the package artifact and its signed
 provenance; it merges only when the signature chain verifies against an

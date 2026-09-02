@@ -5,14 +5,32 @@ on:
     branches: [main]
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - name: Pin the registry root key independently of the checkout
+        run: |
+          # A pull request that swaps v1/trust/root.pub and re-signs everything
+          # must not be able to verify itself: the expected key lives here.
+          expected="8c26f6f713c20f165ca76d6e42424ca1498a78277647674b35d8d33dfa93bec7"
+          actual="$(tr -d '[:space:]' < v1/trust/root.pub)"
+          [ "$actual" = "$expected" ] || { echo "root.pub does not match the pinned registry root key" >&2; exit 1; }
       - name: Fetch the Nivren CLI
         run: |
-          curl -sSfL -o nivren.zip https://github.com/violetweather/nivren/releases/download/v0.10.0-beta.9/nivren-v0.10.0-beta.9-linux-x64.zip
+          # The verifier must be at least 1.0.1: it understands the v2 trust
+          # documents (advisories_sha256, package-bound authorizations). The
+          # archive is checked against the release checksum manifest.
+          base="https://github.com/violetweather/nivren/releases/download/v1.0.1"
+          curl -sSfL -o nivren.zip "$base/nivren-v1.0.1-linux-x64.zip"
+          curl -sSfL -o SHA256SUMS "$base/SHA256SUMS"
+          expected="$(awk '$2 == "nivren-v1.0.1-linux-x64.zip" { print $1 }' SHA256SUMS)"
+          [ -n "$expected" ] || { echo "release checksum manifest lacks the CLI archive" >&2; exit 1; }
+          echo "$expected  nivren.zip" | sha256sum -c -
           unzip -o nivren.zip -d nivren-cli
           NIV=$(find nivren-cli -name niv -type f | head -1)
           chmod +x "$NIV"

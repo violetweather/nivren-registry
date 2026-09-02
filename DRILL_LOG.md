@@ -27,3 +27,22 @@ repository is the corresponding audit trail.
 Limitation, stated plainly: the "outside publisher" was a second key
 operated by the registry owner, because the project has no outside users
 yet. The flow exercised is exactly the one a real stranger will use.
+
+## 2026-09-01 — trust-document format v2 (Nivren 1.0.1)
+
+- **Generation 5**: every trust document re-signed with the 1.0.1 CLI
+  after the 1.0.0 security review (`tools/resign_trust.py`). The status
+  now commits to the served advisory list (`advisories_sha256`);
+  revocation sets and advisory version sets are length-prefixed so two
+  different sets can no longer sign to identical bytes; publisher
+  authorizations name the packages each key may release (`official` →
+  `nivren_*`, `outsider` → `registry_drill`, recorded in
+  `tools/publishers.json`).
+- Package archives and their provenance are unchanged: artifacts are
+  immutable and the provenance format did not move. All 26 releases
+  verify against the generation-5 documents with the 1.0.1 CLI.
+- Compatibility: clients older than 1.0.1 cannot read the generation-5
+  documents, so this tree was published only after the 1.0.1 release
+  was available.
+- CI now pins the registry root key independently of the checkout and
+  checks the CLI archive against the release checksum manifest.

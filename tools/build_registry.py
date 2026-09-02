@@ -65,11 +65,17 @@ def main():
         sys.exit("tools/publisher.pub is missing; write the publisher public key first")
     authorizations = registry / "v1/authorizations"
     authorizations.mkdir(parents=True, exist_ok=True)
+    # Every publisher is bound to the package names it may release; the
+    # list lives in tools/publishers.json so it is reviewed like code.
+    publishers = json.loads((registry / "tools/publishers.json").read_text(encoding="utf-8"))
+    if arguments.publisher not in publishers:
+        sys.exit(f"tools/publishers.json does not list publisher {arguments.publisher!r}")
     run([
         niv, "trust", "authorize", arguments.publisher, publisher_pub,
         arguments.repository, arguments.workflow,
         str(now + arguments.authorization_days * 86400),
         arguments.root_secret, authorizations / f"{arguments.publisher}.json",
+        ",".join(publishers[arguments.publisher]),
     ])
 
     # Build, place, and attest every official package.
@@ -102,17 +108,20 @@ def main():
 
     # Signed status with the requested generation.
     unsigned = registry / "tools" / "status-unsigned.json"
+    # The status commits to the served advisory list through
+    # advisories_sha256, which sign-status fills in from the fourth argument.
     unsigned.write_text(json.dumps({
         "generation": arguments.generation,
         "issued_at": now,
         "expires_at": now + arguments.status_days * 86400,
         "revoked_keys": [],
         "frozen_packages": {},
+        "advisories_sha256": "",
         "signature": "",
     }, indent=2) + "\n", encoding="utf-8")
     run([
         niv, "trust", "sign-status", unsigned, arguments.root_secret,
-        registry / "v1/trust/status.json",
+        registry / "v1/trust/status.json", advisories,
     ])
     unsigned.unlink()
 
