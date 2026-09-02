@@ -4,5 +4,8 @@
   "repository": "violetweather/nivren",
   "workflow": ".github/workflows/release.yml",
   "expires_at": 1851287621,
-  "signature": "1e59f1880c4b0162d9768877f6c2ca1adbe1f2276ea8237cd926bc9e9a8db42cdff7137fbdb2480c2ef42a227cd12d5d33dffb7c1eeb3937e564b780127a360d"
+  "packages": [
+    "nivren_*"
+  ],
+  "signature": "d9de23f521f089412a828b73534225579b3deac5e5cd1b6acddfabc615174ef2be1baefa92764e0c48654883eb10f3ff1c321ec4efc288bffeed67e1796ce100"
 }
